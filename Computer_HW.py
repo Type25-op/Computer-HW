@@ -4,7 +4,7 @@ from subprocess import check_output
 import mysql.connector as db_
 from pyfiglet import Figlet
 db = db_.connect(host="localhost", port='3306',user = 'root',password = 'elephant')
-cur = db.cursor(buffered=True)
+cur = db.cursor(buffered=True)     
 cur.execute("USE hospital_management")
 Permissons = False
 User = None
@@ -73,7 +73,7 @@ def Add_patient():
 def Check_Patients():
     if Permissons == True:
         name = input("Enter name: ")
-        cur.execute("select * from patient ")
+        cur.execute("select * from patients ")
         for x in cur:
             if x[1] == name:
                 print(x)
