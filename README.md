@@ -71,7 +71,7 @@ Type the numbers to the corrsponding task to use them. Login,Logout,exit,Checkin
 ### Failed
 ![imgs](images/fail%20login.png?raw=true "Title")
 ### Success
-![imgs](images/sucess%20login.png?raw=true "Title")
+![imgs](images/Sucess%20login.png?raw=true "Title")
 ## When Executed Functions Require Login
 ![imgs](images/No%20Login.png?raw=true "Title")
 ## Active docs list
