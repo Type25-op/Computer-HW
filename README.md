@@ -67,3 +67,14 @@ Type the numbers to the corrsponding task to use them. Login,Logout,exit,Checkin
 ## Patients Table
 ![imgs](images/WhatsApp%20Image%202022-07-01%20at%203.30.23%20AM.jpeg?raw=true "Title")
 
+## Login
+### Failed
+![imgs](images/fail%20login.png?raw=true "Title")
+### Success
+![imgs](images/sucess%20login.png?raw=true "Title")
+## When Executed Functions Require Login
+![imgs](images/No%20Login.png?raw=true "Title")
+## Active docs list
+![imgs](images/List%20docs.png?raw=true "Title")
+## Check Patient
+![imgs](images/Patients.png?raw=true "Title")
