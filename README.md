@@ -1,18 +1,19 @@
 # Hospital management system
 
-###  By-Govind Goyal
+### By-Govind Goyal
 
 ## Requirements
+
 ```bash
 pip install mysql.connector
 pip install pyfiglet
 ```
 
 ## CODE
+
 ### Click ON the link below
+
 [Here](https://github.com/Type25-op/Computer-HW/blob/main/Computer_HW.py)
-
-
 
 ## Output
 
@@ -56,25 +57,50 @@ Type the numbers to the corrsponding task to use them. Login,Logout,exit,Checkin
 >>> 
 ```
 
-
 ## IMAGES
+
 ## Tables
+
 ![imgs](images/WhatsApp%20Image%202022-07-01%20at%203.30.14%20AM.jpeg?raw=true "Title")
+
 ## Doctors Table
+
 ![imgs](images/WhatsApp%20Image%202022-07-01%20at%203.30.18%20AM.jpeg?raw=true "Title")
+
 ## Users/Reciptionist/allowed Personnel Table
+
 ![imgs](images/WhatsApp%20Image%202022-07-01%20at%203.30.23%20AM%20(1).jpeg?raw=true "Title")
+
 ## Patients Table
+
 ![imgs](images/WhatsApp%20Image%202022-07-01%20at%203.30.23%20AM.jpeg?raw=true "Title")
 
 ## Login
+
 ### Failed
+
 ![imgs](images/fail%20login.png?raw=true "Title")
+
 ### Success
+
 ![imgs](images/Sucess%20login.png?raw=true "Title")
+
 ## When Executed Functions Require Login
+
 ![imgs](images/No%20Login.png?raw=true "Title")
+
 ## Active docs list
+
 ![imgs](images/List%20docs.png?raw=true "Title")
+
 ## Check Patient
+
 ![imgs](images/Patients.png?raw=true "Title")
+
+## EDIT
+
+```Termial
+NOW MAKES THE TABLES AND THE DATABASES IF THE DO NOT ALREADY EXIST ON THE COMPUTER
+
+-27th JULY 2022
+```

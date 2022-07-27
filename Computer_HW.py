@@ -4,8 +4,23 @@ from subprocess import check_output
 import mysql.connector as db_
 from pyfiglet import Figlet
 db = db_.connect(host="localhost", port='3306',user = 'root',password = 'confidential')
-cur = db.cursor(buffered=True)     
-cur.execute("USE hospital_management")
+cur = db.cursor(buffered=True)
+
+#/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////     
+# Creating databases and tables if not already created
+#/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+try :
+    cur.execute("USE hospital_management")
+except:
+    cur.execute("create database hospital_management")
+    cur.execute("USE hospital_management")
+    cur.execute("CREATE Table docs (id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,name VARCHAR(255) NOT NULL,pass VARCHAR(255) NOT NULL,phone VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL,working VARCHAR(255) NOT NULL DEFAULT 0)")
+    cur.execute("CREATE Table patients (id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,name VARCHAR(255) NOT NULL,phone VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL,doctor VARCHAR(255) NOT NULL,place VARCHAR(255) NOT NULL)")
+    cur.execute("CREATE Table users (id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,name VARCHAR(255) NOT NULL,pass VARCHAR(255) NOT NULL,phone VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL)")
+    cur.execute("insert into users (name,pass, phone, email)values(%s,%s,%s,%s)",["ADMIN","ADMIN_PASS","ADMIN_PHONE","ADMIN_EMAIL"])
+    db.commit()
+    print("new creation sucessfull! Pls Restart The program.")
+    print("\t NOTE: The program once made will have an default user with id:'ADMIN' and pass:'ADMIN_PASS' ")
 Permissons = False
 User = None
 
