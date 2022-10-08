@@ -1,5 +1,4 @@
 #Computer science project 'Hospital management project'
-# -Govind Goyal
 from subprocess import check_output
 import mysql.connector as db_
 from pyfiglet import Figlet
