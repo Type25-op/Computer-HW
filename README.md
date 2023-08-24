@@ -1,7 +1,5 @@
 # Hospital management system
 
-### By-Govind Goyal
-
 ## Requirements
 
 ```bash
@@ -102,5 +100,4 @@ Type the numbers to the corrsponding task to use them. Login,Logout,exit,Checkin
 ```Termial
 NOW MAKES THE TABLES AND THE DATABASES IF THE DO NOT ALREADY EXIST ON THE COMPUTER
 
--27th JULY 2022
 ```
